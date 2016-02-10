@@ -3,7 +3,7 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
-
+sh
 VERSION = '1.0'
 
 -- This function is called when tg receive a msg
@@ -251,7 +251,7 @@ function create_config( )
     ?? this bot is made by : @creed_is_dead
    ????????
    ??   our admins are : 
-   ??   @amirmr33   ????????
+   ??   @crazyboy10   ????????
   ?? You can send your Ideas and messages to Us By sending them into bots account by this command :
    تمامي درخواست ها و همه ي انتقادات و حرفاتونو با دستور زير بفرستين به ما
    !feedback (your ideas and messages)
@@ -345,7 +345,7 @@ You Can user both "!" & "/" for them
     help_text = [[
 Creed bots Help for mods : Plugins
 
-Shayan123 : 
+crazy boy : 
 
 
 Help For Banhammer دستوراتي براي کنترل گروه
