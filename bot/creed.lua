@@ -209,22 +209,26 @@ function create_config( )
     "ingroup",
     "inpm",
     "banhammer",
-    "Boobs",
+    ".",
     "Feedback",
+    "plugins",
     "lock_join",
     "antilink",
     "antitag",
     "gps",
     "auto_leave",
-    "block",
+    "cpu",
+    "calc",
+    "bin",
     "tagall",
-    "arabic_lock",
+    "text",
+    "info",
+    "bot_on_off",
     "welcome",
+    "His",
+    "webshot",
     "google",
     "sms",
-    "Debian_service",
-    "sudoers",
-    "add_admin",
     "anti_spam",
     "add_bot",
     "owners",
@@ -236,22 +240,20 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {118682430},--Sudo users
-    disabled_channels = {},
+    sudo_users = {172178919},--Sudo users
+    disabled_chann144152859els = {},
+    realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
     about_text = [[Creed bot 2.3
     
      Hello my Good friends 
      
-    ‼️ this bot is made by : @creed_is_dead
-   〰〰〰〰〰〰〰〰
-   ߔࠀ   our admins are : 
-   ߔࠀ   @sorblack_creed
-   ߔࠀ   @amircc_creed
-   ߔࠀ   @aria_creed
-   〰〰〰〰〰〰〰〰
-  ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
-   تمامی درخواست ها و همه ی انتقادات و حرفاتونو با دستور زیر بفرستین به ما
+    ?? this bot is made by : @creed_is_dead
+   ????????
+   ??   our admins are : 
+   ??   @amirmr33   ????????
+  ?? You can send your Ideas and messages to Us By sending them into bots account by this command :
+   تمامي درخواست ها و همه ي انتقادات و حرفاتونو با دستور زير بفرستين به ما
    !feedback (your ideas and messages)
 ]],
     help_text_realm = [[
@@ -259,277 +261,286 @@ Realm Commands:
 
 !creategroup [Name]
 Create a group
-گروه جدیدی بسازید
+گروه جديدي بسازيد
 
 !createrealm [Name]
 Create a realm
-گروه مادر جدیدی بسازید
+گروه مادر جديدي بسازيد
 
 !setname [Name]
 Set realm name
-اسم گروه مادر را تغییر بدهید
+اسم گروه مادر را تغيير بدهيد
 
 !setabout [GroupID] [Text]
 Set a group's about text
-در مورد  آن گروه توضیحاتی را بنویسید (ای دی گروه را بدهید )
+در مورد  آن گروه توضيحاتي را بنويسيد (اي دي گروه را بدهيد )
 
 !setrules [GroupID] [Text]
 Set a group's rules
-در مورد آن گروه قوانینی تعیین کنید ( ای دی گروه را بدهید )
+در مورد آن گروه قوانيني تعيين کنيد ( اي دي گروه را بدهيد )
 
 !lock [GroupID] [setting]
 Lock a group's setting
-تنظیکات گروهی را قفل بکنید
+تنظيکات گروهي را قفل بکنيد
 
 !unlock [GroupID] [setting]
 Unock a group's setting
-تنظیمات گروهی را از قفل در بیاورید 
+تنظيمات گروهي را از قفل در بياوريد 
 
 !wholist
 Get a list of members in group/realm
-لیست تمامی اعضای گروه رو با ای دی شون نشون میده
+ليست تمامي اعضاي گروه رو با اي دي شون نشون ميده
 
 !who
 Get a file of members in group/realm
-لیست تمامی اعضای گروه را با ای دی در فایل متنی دریافت کنید
+ليست تمامي اعضاي گروه را با اي دي در فايل متني دريافت کنيد
 
 !type
 Get group type
-در مورد نقش گروه بگیرید
+در مورد نقش گروه بگيريد
 
 !kill chat [GroupID]
-Kick all memebers and delete group 
-️تمامی اعضای گروه را حذف میکند 
+Kick all memebers and delete group ????
+??تمامي اعضاي گروه را حذف ميکند ??
 
 !kill realm [RealmID]
-Kick all members and delete realm
-تمامی اعضای گروه مارد را حذف میکند
+Kick all members and delete realm????
+تمامي اعضاي گروه مارد را حذف ميکند
 
 !addadmin [id|username]
 Promote an admin by id OR username *Sudo only
-ادمینی را اضافه بکنید
+ادميني را اضافه بکنيد
 
 
 !removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
-️ادمینی را با این دستور صلب مقام میکنید 
+Demote an admin by id OR username *Sudo only????
+????ادميني را با اين دستور صلب مقام ميکنيد ????
 
 !list groups
 Get a list of all groups
-لیست تمامی گروه هارو میده
+ليست تمامي گروه هارو ميده
 
 !list realms
 Get a list of all realms
-لیست گروه های مادر را میدهد
+ليست گروه هاي مادر را ميدهد
 
 
 !log
 Get a logfile of current group or realm
-تمامی عملیات گروه را میدهد
+تمامي عمليات گروه را ميدهد
 
 !broadcast [text]
-Send text to all groups ✉️
-✉️ با این دستور به تمامی گروه ها متنی را همزمان میفرستید  .
+Send text to all groups ??
+?? با اين دستور به تمامي گروه ها متني را همزمان ميفرستيد  .
 
 !br [group_id] [text]
-This command will send text to [group_id]✉️
-با این دستور میتونید به گروه توسط ربات متنی را بفرستید 
+This command will send text to [group_id]??
+با اين دستور ميتونيد به گروه توسط ربات متني را بفرستيد 
 
 You Can user both "!" & "/" for them
-میتوانید از هردوی کاراکتر های ! و / برای دستورات استفاده کنید
+ميتوانيد از هردوي کاراکتر هاي ! و / براي دستورات استفاده کنيد
 
 
 ]],
     help_text = [[
-bots Help for mods : Plugins
+Creed bots Help for mods : Plugins
 
-Banhammer : 
+Shayan123 : 
 
 
-Help For Banhammer دستوراتی برای کنترل گروه
+Help For Banhammer دستوراتي براي کنترل گروه
 
 !Kick @UserName or ID 
-شخصی را از گروه حذف کنید . همچنین با ریپلی هم میشه
+شخصي را از گروه حذف کنيد . همچنين با ريپلي هم ميشه
 
 !Ban @UserName or ID
-برای بن کردن شخص اسفاده میشود . با ریپلی هم میشه
+براي بن کردن شخص اسفاده ميشود . با ريپلي هم ميشه
 
 
 !Unban @UserName
-برای آنبن کردن شخصی استفاده میشود . همچنین با ریپلی هم میشه
+براي آنبن کردن شخصي استفاده ميشود . همچنين با ريپلي هم ميشه
 
 For Admins :
 
 !banall ID
-برای بن گلوبال کردن از تمامی گروه هاست باید ای دی بدین با ریپلی هم میشه
+براي بن گلوبال کردن از تمامي گروه هاست بايد اي دي بدين با ريپلي هم ميشه
 
 !unbanall ID
-برای آنبن کردن استفاده میشود ولی فقط با ای دی میشود
+براي آنبن کردن استفاده ميشود ولي فقط با اي دي ميشود
 
-〰〰〰〰〰〰〰〰〰〰
+??????????
 2. GroupManager :
 
 !lock leave
-اگر کسی از گروه برود نمیتواند برگردد
+اگر کسي از گروه برود نميتواند برگردد
 
 !lock tag
-برای مجوز ندادن به اعضا از استفاده کردن @  و #  برای تگ
+براي مجوز ندادن به اعضا از استفاده کردن @  و #  براي تگ
 
 
 !Creategp "GroupName"
 you can Create group with this comman
-با این دستور برای ساخت گروه استفاده بکنید
+با اين دستور براي ساخت گروه استفاده بکنيد
 
 
 !lock member
 For locking Inviting users
-برای جلوگیری از آمدن اعضای جدید استفاده میشود
+براي جلوگيري از آمدن اعضاي جديد استفاده ميشود
 
 
 !lock bots
 for Locking Bots invitation
-برای جلوگیری از ادد کردن ربا استفاده میشود
+براي جلوگيري از ادد کردن ربا استفاده ميشود
 
 
-!lock name
+!lock name ??
 To lock the group name for every bodey
-برای قفل کردن اسم استفاده میشود
+براي قفل کردن اسم استفاده ميشود
+!setflood??et the group flood control???زان اسپم را در گروه تعيين ميکنيد
 
-!setflood set the group flood control  
-تعداد اسپم را در گروه تعیین میکنید
-
-!settings
+!settings ?
 Watch group settings
-تنظیمات فعلی گروه را میبینید
+تنظيمات فعلي گروه را ميبينيد
 
 !owner
 watch group owner
-آیدی سازنده گروه رو میبینید
+آيدي سازنده گروه رو ميبينيد
 
-!setowner user_id
-You can set someone to the group owner‼️
-برای گروه سازنده تعیین میکنید 
+!setowner user_id??
+You can set someone to the group owner??
+براي گروه سازنده تعيين ميکنيد 
 
 !modlist
 catch Group mods
-لیست مدیران گروه را میگیرید
-
-!lock adds 
-to lock commercial Breaks and Other group links in group
-از دادن لینک گروه یا سایت یا هرچیز دیگه توی گروه جلوگیری میکند .
-
-!lock eng
-You cannot speak english in group
-از حرف زدن انگلیسی توی گروه جلوگیری میکند
-
-!lock settings
-To lock settings of group and unchange able
-برای قفل کردن تنظیمات گروه به کار میره
-
-!lock badw
-To lock using badwords in group
-برای جلوگیری از استفاده کردن حرف های رکیک استفاده میشود
-
+ليست مديران گروه را ميگيريد
 
 !lock join 
 to lock joining the group by link
-برای جلوگیری از وارد شدن به کروه با لینک
+براي جلوگيري از وارد شدن به کروه با لينک
 
 
-!lock flood
+!lock flood??
 lock group flood
-از اسپم دادن در گروه جلوگیری کنید
+از اسپم دادن در گروه جلوگيري کنيد
 
-!unlock (bots-member-flood-photo-name-tag-link-join-Arabic)
+!unlock (bots-member-flood-photo-name-tag-link-join-Arabic)?
 Unlock Something
-موارد بالا را با این دستور آزاد میسازید
+موارد بالا را با اين دستور آزاد ميسازيد
 
 !rules  && !set rules
 TO see group rules or set rules
-برای دیدن قوانین گروه و یا انتخاب قوانین 
+براي ديدن قوانين گروه و يا انتخاب قوانين 
 
 !about or !set about
 watch about group or set about
-در مورد توضیحات گروه میدهد و یا توضیحات گروه رو تعیین کنید 
+در مورد توضيحات گروه ميدهد و يا توضيحات گروه رو تعيين کنيد 
 
 !res @username
 see Username INfo
-در مورد اسم و ای دی شخص بهتون میده 
+در مورد اسم و اي دي شخص بهتون ميده 
 
-!who
+!who??
 Get Ids Chat
-همه ی ای دی های موجود در چت رو بهتون میده
+امي اي دي هاي موجود در چت رو بهتون ميده
 
 !log 
-get members id
-تمامی فعالیت های انجام یافته توسط شما و یا مدیران رو نشون میده
+get members id ??
+تمامي فعاليت هاي انجام يافته توسط شما و يا مديران رو نشون ميده
 
 !all
 Says every thing he knows about a group
-در مورد تمامی اطلاعات ثبت شده در مورد گروه میدهد
+در مورد تمامي اطلاعات ثبت شده در مورد گروه ميدهد
 
 
 !newlink
 Changes or Makes new group link
-لینک گروه رو عوض میکنه 
+لينک گروه رو عوض ميکنه 
 
-!link
+!getlink
 gets The Group link
-لینک گروه را در گروه نمایش میده
+لينک گروه را در گروه نمايش ميده
 
 !linkpv
 sends the group link to the PV
-برای دریافت لینک در پیوی استفاده میشه 
-〰〰〰〰〰〰〰〰
-Admins :
-
+براي دريافت لينک در پيوي استفاده ميشه 
+????????
+Admins :®
 !add
 to add the group as knows
-برای مجوز دادن به ربات برای استفاده در گروه
+براي مجوز دادن به ربات براي استفاده در گروه
 
 
 !rem
 to remove the group and be unknown
-برای ناشناس کردن گروه برای ربات توسط مدیران اصلی
+براي ناشناس کردن گروه براي ربات توسط مديران اصلي
 
-!setgpowner (Gpid) user_id
+!setgpowner (Gpid) user_id ??
 For Set a Owner of group from realm
- برای تعیین سازنده ای برای گروه  از گروه مادر
+ براي تعيين سازنده اي براي گروه  از گروه مادر
 
 !addadmin [Username]
 to add a Global admin to the bot
-برای ادد کردن ادمین اصلی ربات
+براي ادد کردن ادمين اصلي ربات
 
 
 !removeadmin [username]
 to remove an admin from global admins
-برای صلب ادمینی از ادمینای اصلی
+براي صلب ادميني از ادميناي اصلي
+
+
+!plugins - [plugins]
+To Disable the plugin
+براي غير فعال کردن پلاگين توسط سازنده
+
+
+!plugins + [plugins]
+To enable a plugins
+براي فعال کردن چلاگين توسط سازنده
+
+!plugins ?
+To reload al plugins
+راي تازه سازي تمامي پلاگين هاي فعال
+
+!plugins
+Shows the list of all plugins
+ليست تمامي پلاگين هارو نشون ميده
 
 !sms [id] (text)
 To send a message to an account by his/her ID
-برای فرستادن متنی توسط ربات به شخصی با ای دی اون
+براي فرستادن متني توسط ربات به شخصي با اي دي اون
 
 
-〰〰〰〰〰〰〰〰〰〰〰
-3.!stats
+???????????
+3. Stats :©
+!stats creedbot (sudoers)??
+To see the stats of creed bot
+براي ديدن آمار ربات 
+
+!stats
 To see the group stats
-برای دیدن آمار گروه 
+براي ديدن آمار گروه 
 
-〰〰〰〰〰〰〰〰
-4. Feedback
+????????
+4. Feedback??
 !feedback (text)
 To send your ideas to the Moderation group
-برای فرستادن انتقادات و پیشنهادات و حرف خود با مدیر ها استفاده میشه
+براي فرستادن انتقادات و پيشنهادات و حرف خود با مدير ها استفاده ميشه
 
-〰〰〰〰〰〰〰〰〰〰〰
-5. Tagall
+???????????
+5. Tagall??
 !tagall (text)
 To tags the every one and sends your message at bottom
-تگ کردن همه ی اعضای گروه و نوشتن پیام شما زیرش
+تگ کردن همه ي اعضاي گروه و نوشتن پيام شما زيرش
 
+?????????
+More plugins  soon ...
+?? We are Creeds ??
+
+our channel : @creedantispam_channel
+کانال ما
 
 You Can user both "!" & "/" for them
-می توانید از دو شکلک !  و / برای دادن دستورات استفاده کنید
+مي توانيد از دو شکلک !  و / براي دادن دستورات استفاده کنيد
 
 ]]
 
